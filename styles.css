@@ -4,8 +4,7 @@
 }
 
 html {
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
 
 H1, H2, H3, H4, H5, H6 {
@@ -170,23 +169,6 @@ table {
         content: "";
         width: 0px;
         height: 0em;
-        top: 55%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .rmCareerCard:nth-child(odd)::before, 
-    .rmCareerCard:nth-child(even)::before,
-    .contactCard:nth-child(odd)::before, 
-    .contactCard:nth-child(even)::before {
-          content: "";
-          background: rgb(9, 78, 124);
-          width: 3px;
-          height: 1330px;
-          position: absolute;
-          top: 1345px;
-          transform: translateY(-665px);
     }
 
 }
