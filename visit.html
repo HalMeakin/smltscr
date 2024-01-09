@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Mary-le-Tower Society of Change Ringers</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--NavBar-->
+    <div id="navBar">
+        <div style="display: flex; gap: 10px;">
+            <button id="home" onclick="goToHome();"><i class="fa-solid fa-house"></i></button>
+            <span style="margin-right: auto" id="titleFull">St Mary-le-Tower<br/>Society of Change Ringers</span>
+        <!--<span style="margin-right: auto" id="titleMin">SMLTSCR</span>-->
+            <button class="menuItem" id="history" onclick="goToHistory();"><i class="fa-solid fa-history"></i></button>
+            <button class="menuItem" id="visit" onclick="goToVisit();" style="background-color: cornflowerblue;"><i class="fa-solid fa-location-dot"></i></button>
+            <button class="menuItem" id="ringingMasters" onclick="goToRingingMasters();"><i class="fa-solid fa-bell"></i></button>
+            <button class="menuItem" id="training" onclick="goToTraining();"><i class="fa-solid fa-dumbbell"></i></button>
+            <button class="menuItem" id="contact" onclick="goToContact();"><i class="fa-solid fa-address-book"></i></button>
+            <button class="menuItem" id="links" onclick="goToLinks();"><i class="fa-solid fa-link"></i></button>
+            <button id="menu"><i class="fa-solid fa-bars"  onclick="openNav();"></i></button>
+        </div>
+    </div>
+
+    <!--Visit Page content-->
+    <div id="homePage">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70%; margin: auto;">
+            <div id="heroImage"></div>
+            <h1>Visit St Mary-le-Tower</h1>
+            <h2>Visiting ringers are welcome!</h2>
+            <hr/>
+            <p>
+                Our practice night is Monday 7.00pm to 9.00pm
+            </p>
+            <p>
+                We usually ring on Sunday mornings for Choral Matins, between 8.45am and 9.30am 
+                (during August we ring for the Eucharist 9.45am to 10.30am as there is no 
+                Choral Matins)
+            </p>
+            <p>
+                <strong>
+                    Please always check with us before travelling!
+                </strong>
+            </p>
+            <p>
+                We welcome visitors to our service ringing and practices, and will do our best 
+                to ensure that you will be able to participate in something suiting your ability.  
+                It’s always best to contact us in advance just to check that we do not have anything 
+                special occurring which might alter our normal ringing.
+            </p>
+            <p>
+                The bells are available for visiting bands - for general ringing, quarter peals 
+                and peals.  However, we are a tower in the centre of a busy town, with many 
+                businesses and restaurants. We do therefore have to be very mindful of this and the 
+                amount of ringing that takes place is carefully controlled.  Please contact us in 
+                the first instance.
+            </p>
+            <h2>Fees for the use of the bells</h2>
+            
+            <table>
+                <tr>
+                    <th colspan="2" style="text-align: center;">Tower Fees</th>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><b>Peals</b> rung for/accredited to:</td>
+                </tr>
+                <tr>
+                    <td>The Suffolk Guild of Ringers</td>
+                    <td>£5 per rope <br /><span style="font-size: small;">(excludes Suffolk Guild peal fee)</span></td>
+                </tr>
+                <tr>
+                    <td>SMLT Society of Change Ringers</td>
+                    <td>£5 per rope <br /><span style="font-size: small;">(excludes Suffolk Guild peal fee)</span></td>
+                </tr>
+                <tr>
+                    <td>All other</td>
+                    <td>£8 per rope</td>
+                </tr>
+                <tr>
+                    <td>Quarter Peals</td>
+                    <td>£1 per rope</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">Fees for Peals and Quartar Peals are payable in full for all attempts, unless lost through mechanical breakdown.</td>
+                </tr>
+                <tr>
+                    <td>Visiting bands</td>
+                    <td>£25 minimum donation</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/e7e56e69bc.js" crossorigin="anonymous"></script>
+</body>
+</html>

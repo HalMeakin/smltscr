@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+H1, H2, H3, H4, H5, H6 {
+    color:rgb(9, 78, 124);
+}
+
+p, span {
+    color: rgb(50, 50, 50);
+}
+
+strong {
+    color:rgb(9, 103, 166);
+}
+
+hr {
+    width: 70%;
+    border-color: rgb(22, 156, 246);
+}
+
+#navBar {
+    background-color: rgb(9, 78, 124); 
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+#navBar span {
+    color: white;
+}
+
+#titleFull {
+    display: block;
+}
+/*
+#titleMin {
+    align-self: center;
+    display: none;
+}
+*/
+
+#heroImage {
+    background-image: url("./images/smlt.jpeg");
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat center fixed;
+}
+
+button {
+    border: 0;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(22, 156, 246);
+    color: white;
+    width: 35px;
+    height: 37px;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+#menu {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid rgb(9, 78, 124);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(207, 229, 244);
+  }
+
+  #timeline {
+    margin: 5em auto;
+    max-width: 34.15em;
+  }
+
+  .rmCareerCard div {
+    position: relative;
+    z-index: 1;
+  }
+
+  .rmCareerCard:nth-child(odd) {
+    border-right: 3px solid rgb(9, 78, 124);
+    transform: translateX(-220px);
+  }
+
+  .rmCareerCard:nth-child(even) {
+    border-left: 3px solid rgb(9, 78, 124);
+    transform: translateX(220px);
+  }
+
+  .rmCareerCard:nth-child(odd)::before, 
+  .rmCareerCard:nth-child(even)::before {
+        content: "";
+        background: rgb(9, 78, 124);
+        width: 3em;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+  }
+
+  .rmCareerCard:nth-child(odd)::before {
+    right: 0;
+  }
+
+  .rmCareerCard:nth-child(even)::before {
+    left: 0;
+  }
+
+@media screen and (max-width: 543px){
+
+    #menu {
+        display: block;
+    }
+
+    .menuItem {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #timeline {
+        width: 80vw;
+    }
+
+    #timeline .rmCareerCard {
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: 0;
+    }
+
+    #timeline .rmCareerCard::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

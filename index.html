@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Mary-le-Tower Society of Change Ringers</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--NavBar-->
+    <div id="navBar">
+        <div style="display: flex; gap: 10px;">
+            <button id="home" onclick="goToHome();" style="background-color: cornflowerblue;"><i class="fa-solid fa-house"></i></button>
+            <span style="margin-right: auto" id="titleFull">St Mary-le-Tower<br/>Society of Change Ringers</span>
+        <!--<span style="margin-right: auto" id="titleMin">SMLTSCR</span>-->
+            <button class="menuItem" id="history" onclick="goToHistory();"><i class="fa-solid fa-history"></i></button>
+            <button class="menuItem" id="visit" onclick="goToVisit();"><i class="fa-solid fa-location-dot"></i></button>
+            <button class="menuItem" id="ringingMasters" onclick="goToRingingMasters();"><i class="fa-solid fa-bell"></i></button>
+            <button class="menuItem" id="training" onclick="goToTraining();"><i class="fa-solid fa-dumbbell"></i></button>
+            <button class="menuItem" id="contact" onclick="goToContact();"><i class="fa-solid fa-address-book"></i></button>
+            <button class="menuItem" id="links" onclick="goToLinks();"><i class="fa-solid fa-link"></i></button>
+            <button id="menu"><i class="fa-solid fa-bars"  onclick="openNav();"></i></button>
+        </div>
+    </div>
+
+    <!--Home Page content-->
+    <div id="homePage">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70%; margin: auto;">
+            <div id="heroImage"></div>
+            <h1>Welcome!</h1>
+            <hr/>
+            <p>
+                We are the resident ringers at the Civic and Town church of 
+                <a href="https://www.stmaryletower.org">St Mary-le-Tower</a> 
+                in central Ipswich.
+            </p>
+            <p>
+                There has been a ringing tradition here for over 300 years and certainly from 1896-1939 
+                the St Mary-le-Tower society was one of the leading twelve-bell Companies in the land. 
+                Over 700 peals have been rung here, many of them for notable occasions.
+            </p>
+            <p>
+                We are very grateful to Colin Salter, who is currently researching the history 
+                of the SMLT Society.  You can read his document <a href="">here</a>!
+            </p>
+            <p>
+                Please explore our website, which we hope you will find interesting, and do get 
+                in touch with us if you would like any more information. You can reach our 
+                Contact page <a href="">here</a>!
+            </p>
+        </div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/e7e56e69bc.js" crossorigin="anonymous"></script>
+</body>
+</html>
