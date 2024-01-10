@@ -8,7 +8,9 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
 }
 
 H1, H2, H3, H4, H5, H6 {
@@ -33,6 +35,11 @@ hr {
     border-color: rgb(22, 156, 246);
 }
 
+.footer {
+    margin-top: auto;
+    justify-self: flex-end;
+}
+
 #navBar, 
 .footer {
     background-color: rgb(9, 78, 124); 
@@ -43,10 +50,6 @@ hr {
 #navBar span,
 .footer span {
     color: white;
-}
-
-.footer {
-    margin-top: auto;
 }
 
 #titleFull {
@@ -101,6 +104,7 @@ button {
     color: white;
     padding: 10px;
     margin: 10px;
+    margin-top: 18px;
     border-radius: 5px;
     transition: all .2s ease-in-out;
 }
