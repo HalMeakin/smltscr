@@ -1,10 +1,19 @@
 /******************** defaults ***************************/
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 html, body, div, p {
 	padding:0px;  /* Inside of border */
 	margin:0px; /* Outside of border */
-	font:12px/1.4 Arial, sans-serif;
+	font-size:12px;
+  color: rgb(50, 50, 50);
 } 
-h4 {text-align: center}
+h4 {
+  text-align: center;
+  color: rgb(50, 50, 50);
+}
+
 body {
 	background:#f4e8ff /*Theme*/
 }
@@ -23,14 +32,16 @@ body {
   border-style:solid;
   border-width:2px;
   border-color:grey; /*Theme*/
-  background-color:#afa;  /*Theme*/
+  background-color:rgb(9, 78, 124);  /*Theme*/
   height:80px;
+  color: white;
+  padding: 8px;
 }
 .detailblock  {
   border-style:solid;
   border-width:2px;
   border-color:grey; /*Theme*/
-  background-color: #faa;  /*Theme*/
+  background-color: rgb(170, 197, 255);  /*Theme*/
   position:fixed;
   top:90px; /* or whatever the header height is */
   right:2px;
@@ -45,10 +56,9 @@ body {
   right:04px;
   overflow-y: auto;
   overflow-x: auto;    
-  border-style:solid;
-  border-width:2px;
   border-color:grey; /*Theme*/
-  background-color: #fff;  /*Theme*/
+  background-color: #ffffff;  /*Theme*/
+  padding: 8px;
 }
 .pn {
   font-size: 9px;
@@ -76,9 +86,7 @@ body {
     right:45.3%; /* SGR controls amount of unused space on the right of graph */
  	overflow-y: auto;
     overflow-x: auto;
-  border-style:solid;
-  border-width:2px;
-  border-color:grey; /*Theme*/
+    border-radius: 5px; /*Theme*/
   background-color: #fff;  /*Theme*/
 } 
 .rhs {
@@ -89,15 +97,13 @@ body {
   right:04px;
   overflow-y: auto;
   overflow-x: auto;    
-  border-style:solid;
-  border-width:2px;
-  border-color:grey; /*Theme*/
+  border-radius: 5px; /*Theme*/
   background-color: #fff;  /*Theme*/
 }
 /* SGR + RHSL = 100.3 */
 /******************* RHS of striking Graph *****************/
 .rhsXXX{ /* This applies to all RHS tables */
-	border:2px solid #008888; /*Theme*/
+	border:0px solid #7d7d7d; /*Theme*/
 	padding:2px;
 	margin:10px 5px;
 }
@@ -108,10 +114,11 @@ img.helpiconclass {
 
 /**************** View selector buttons **********************/
 .viewselectorS {
-	border:1px solid #F00; /*Theme*/
+	border:1px solid rgb(255, 61, 61); /*Theme*/
+  border-radius: 5px;
 }
 .viewselectorN {
-	border:1px solid #008888; /*Theme*/
+	border:0px solid #9d9d9d; /*Theme*/
 }
 .vsicons {
 	height:18px;
@@ -130,8 +137,9 @@ img.helpiconclass {
 	margin:0px;
   visibility:hidden;
   width:80px;
-  background:#EED8F0; /*Theme*/
-  color:#000; /*Theme*/
+  background:#ffffff; /*Theme*/
+  border: 2px solid rgb(139, 178, 241);
+  /*color:#000;*/ /*Theme*/
   text-align:center;
   border-radius:15px;
   padding:6px 6px;
@@ -152,8 +160,9 @@ img.helpiconclass {
   white-space:normal;
   visibility:hidden;
   width:230px;
-  background:#EED8F0; /*Theme*/
-  color:#000; /*Theme*/
+  background:rgb(255, 255, 255); /*Theme*/
+  border: 2px solid rgb(139, 178, 241);
+  /*color:#000;*/ /*Theme*/
   text-align:left;
   border-radius:6px;
   padding:6px 6px;
