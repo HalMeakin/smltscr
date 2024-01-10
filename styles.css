@@ -7,6 +7,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    min-height: 100vh;
+}
+
 H1, H2, H3, H4, H5, H6 {
     color:rgb(9, 78, 124);
 }
@@ -29,14 +33,20 @@ hr {
     border-color: rgb(22, 156, 246);
 }
 
-#navBar {
+#navBar, 
+.footer {
     background-color: rgb(9, 78, 124); 
     padding: 10px; 
     border-radius: 5px;
 }
 
-#navBar span {
+#navBar span,
+.footer span {
     color: white;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 #titleFull {
@@ -62,13 +72,6 @@ hr {
     padding:10px;
     transition: all 1.2 ease-in-out;
 }
-
-/*
-#titleMin {
-    align-self: center;
-    display: none;
-}
-*/
 
 #heroImage {
     background-image: url("./images/smlt.jpeg");
