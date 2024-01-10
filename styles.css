@@ -43,6 +43,25 @@ hr {
     display: block;
 }
 
+.dropdownMenu {
+    background-color: rgb(9, 78, 124);
+    width:100%;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-5px;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.dropdownMenuItem {
+    padding:10px;
+}
+
 .usefulLinks {
     text-decoration: none;
     background-color: rgb(9, 103, 166);
@@ -110,6 +129,16 @@ tr:nth-child(even) {
 .timeline {
    margin: 5em auto;
    max-width: 34.15em;
+}
+
+.rmCareerCard div,
+.contactCard div {
+    transition: all 0.3s ease-in-out;
+}
+
+.rmCareerCard div:first-of-type:hover,
+.contactCard div:first-of-type:hover {
+    transform: scale(1.1);
 }
 
 .rmCareerCard div,
