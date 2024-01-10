@@ -1,3 +1,16 @@
+/*
+All of these just point to places.
+Needs rewriting to pull ElementId and use that to decide where to go.
+E F F I C I E N C Y 👀
+
+THIS WILL BE THE CORRECT FUNCTION:
+*/
+function goToPage(id) {
+    window.location = "./" + id.toString() + ".html";
+}
+
+//Currently used functions are here!
+
 function goToHome() {
     window.location = "./index.html";
 }

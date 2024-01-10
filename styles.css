@@ -42,6 +42,20 @@ hr {
 #titleFull {
     display: block;
 }
+
+.usefulLinks {
+    text-decoration: none;
+    background-color: rgb(9, 103, 166);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.usefulLinks:hover {
+    opacity: .7;
+}
+
 /*
 #titleMin {
     align-self: center;
@@ -81,40 +95,40 @@ button:hover {
 table {
     border-collapse: collapse;
     width: 100%;
-  }
+}
   
-  td, th {
+td, th {
     border: 1px solid rgb(9, 78, 124);
     text-align: left;
-    padding: 8px;
-  }
+    padding: 6px;
+}
   
-  tr:nth-child(even) {
-    background-color: rgb(207, 229, 244);
-  }
+tr:nth-child(even) {
+   background-color: rgb(207, 229, 244);
+}
 
-  .timeline {
-    margin: 5em auto;
-    max-width: 34.15em;
-  }
+.timeline {
+   margin: 5em auto;
+   max-width: 34.15em;
+}
 
-  .rmCareerCard div,
-  .contactCard div {
-    position: relative;
-    z-index: 1;
-  }
+.rmCareerCard div,
+.contactCard div {
+   position: relative;
+   z-index: 1;
+}
 
-  .rmCareerCard:nth-child(odd),
-  .contactCard:nth-child(odd) {
-    border-right: 3px solid rgb(9, 78, 124);
-    transform: translateX(-220px);
-  }
+.rmCareerCard:nth-child(odd),
+.contactCard:nth-child(odd) {
+   border-right: 3px solid rgb(9, 78, 124);
+   transform: translateX(-220px);
+}
 
-  .rmCareerCard:nth-child(even),
-  .contactCard:nth-child(even) {
-    border-left: 3px solid rgb(9, 78, 124);
-    transform: translateX(220px);
-  }
+.rmCareerCard:nth-child(even),
+.contactCard:nth-child(even) {
+   border-left: 3px solid rgb(9, 78, 124);
+   transform: translateX(220px);
+}
 
   .rmCareerCard:nth-child(odd)::before, 
   .rmCareerCard:nth-child(even)::before,
@@ -139,6 +153,29 @@ table {
     left: 0;
   }
 
+.contactCardContent {
+    background-color: rgb(9, 78, 124); 
+    width: 400px; 
+    height: 180px; 
+    border-radius: 15px; 
+    display: grid; 
+    grid-template-columns: 2; 
+    grid-template-rows: 2;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
 
 @media screen and (max-width: 543px){
 
@@ -148,6 +185,14 @@ table {
 
     .menuItem {
         display: none;
+    }
+
+    .vert {
+        writing-mode: vertical-lr;
+    }
+
+    .contactCardContent{
+        transform: scale(.7);
     }
 }
 
