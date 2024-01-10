@@ -60,19 +60,7 @@ hr {
 
 .dropdownMenuItem {
     padding:10px;
-}
-
-.usefulLinks {
-    text-decoration: none;
-    background-color: rgb(9, 103, 166);
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-.usefulLinks:hover {
-    opacity: .7;
+    transition: all 1.2 ease-in-out;
 }
 
 /*
@@ -101,9 +89,22 @@ button {
     color: white;
     width: 35px;
     height: 37px;
+    transition: all .2s ease-in-out;
 }
 
-button:hover {
+.usefulLinks {
+    text-decoration: none;
+    background-color: rgb(9, 103, 166);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+button:hover,
+.usefulLinks:hover {
+    transform: scale(1.1);
     opacity: .7;
 }
 
@@ -206,25 +207,6 @@ tr:nth-child(even) {
     height: 100% !important;
   }
 
-@media screen and (max-width: 543px){
-
-    #menu {
-        display: block;
-    }
-
-    .menuItem {
-        display: none;
-    }
-
-    .vert {
-        writing-mode: vertical-lr;
-    }
-
-    .contactCardContent{
-        transform: scale(.7);
-    }
-}
-
 @media screen and (max-width: 1150px) {
     .timeline {
         width: 80vw;
@@ -245,4 +227,35 @@ tr:nth-child(even) {
         height: 0em;
     }
 
+}
+
+@media screen and (max-width: 640px) {
+
+    #heroImage {
+        background-position: -90px;
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+
+    #menu {
+        display: block;
+    }
+
+    .menuItem {
+        display: none;
+    }
+
+    #heroImage {
+        background-position: -150px, 0px;
+    }
+
+    .vert {
+        writing-mode: vertical-lr;
+    }
+
+    .contactCardContent{
+        transform: scale(.7);
+    }
 }
