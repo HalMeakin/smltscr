@@ -18,6 +18,9 @@ To make these accessible on the website, grab the whole folder (should contain a
 
 *** Please note: GitHub will only allow you to add 100 files max if using the webpage. You may need to upload in pairs.
 
+Once uploaded, it will need to have the css file replaced with a copy of the css files in the older files, otherwise it will have the vanilla UI.
+This is a rare case, where vanilla is disgusting.
+
 Next, you'll need to find the index.html under the Hawkear folder and copy the <div></div> blocks. These should contain the appropriate content. 
 You may need to rename the content based on the analyses output. Links should include the .html file within the correct output file. 
 If unsure, upload the output file and contact the Webmaster.
