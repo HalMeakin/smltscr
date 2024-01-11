@@ -10,16 +10,16 @@
     <!--NavBar-->
     <div id="navBar">
         <div style="display: flex; gap: 10px;">
-            <button id="index" onclick="goToPage(id);"><i class="fa-solid fa-house"></i></button>
+            <button id="index" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);" onclick="goToPage(id);"><i class="fa-solid fa-house"></i></button>
             <span style="margin-right: auto" id="titleFull">St Mary-le-Tower<br/>Society of Change Ringers</span>
         <!--<span style="margin-right: auto" id="titleMin">SMLTSCR</span>-->
-            <button class="menuItem" id="history" onclick="goToPage(id);" style="background-color: white;"><i class="fa-solid fa-history" style="color:rgb(22, 156, 246);"></i></button>
-            <button class="menuItem" id="visit" onclick="goToPage(id);"><i class="fa-solid fa-location-dot"></i></button>
-            <button class="menuItem" id="ringingMasters" onclick="goToPage(id);"><i class="fa-solid fa-bell"></i></button>
-            <button class="menuItem" id="training" onclick="goToPage(id);"><i class="fa-solid fa-dumbbell"></i></button>
-            <button class="menuItem" id="contact" onclick="goToPage(id);"><i class="fa-solid fa-address-book"></i></button>
-            <button class="menuItem" id="links" onclick="goToPage(id);"><i class="fa-solid fa-link"></i></button>
-            <button id="menu" onclick="openDropdownMenu();"><i class="fa-solid fa-bars"></i></button>
+            <button class="menuItem noPointer" id="history" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);" style="background-color: white;"><i class="fa-solid fa-history" style="color:rgb(22, 156, 246);"></i></button>
+            <button class="menuItem" id="visit" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-location-dot"></i></button>
+            <button class="menuItem" id="ringingMasters" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-bell"></i></button>
+            <button class="menuItem" id="training" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-dumbbell"></i></button>
+            <button class="menuItem" id="contact" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-address-book"></i></button>
+            <button class="menuItem" id="links" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);" onclick="goToPage(id);"><i class="fa-solid fa-link"></i></button>
+            <button id="menu" onclick="openDropdownMenu(id);"><i class="fa-solid fa-bars"></i></button>
         </div>
     </div>
 
