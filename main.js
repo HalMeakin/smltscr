@@ -37,3 +37,10 @@ function moInteractionRemove(id) {
         icon.classList.remove("fa-flip");
     };
 }
+
+function removeAnim(id) {
+    let btn = document.getElementById(id);
+    let icon = btn.getElementsByTagName('p')[0].getElementsByTagName('i')[0];
+    icon.classList.remove("fa-beat-fade");
+    icon.style.opacity="0";
+}

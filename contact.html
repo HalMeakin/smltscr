@@ -25,12 +25,12 @@
 
     <!--Hidden Nav Menu-->
     <div class="dropdownMenu" id="dropdownMenu">
-        <div class="dropdownMenuItem"><a href="./history.html"><i class="fa-solid fa-history" style="color:white"><span style="color: white;"> History</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./visit.html"><i class="fa-solid fa-location-dot" style="color:white"><span style="color: white;"> Visit Us</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./ringingMasters.html"><i class="fa-solid fa-bell" style="color:white"><span style="color: white;"> Ringing Masters</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./training.html"><i class="fa-solid fa-dumbbell" style="color:white"><span style="color: white;"> Training Bells</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./contact.html"><i class="fa-solid fa-address-book" style="color:white"><span style="color: white;"> Contact Us</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./links.html"><i class="fa-solid fa-link" style="color:white"><span style="color: white;"> Useful Links</span></i></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./history.html" id="menuHistory" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-history" style="color:white"></i><span style="color: white; font-weight: bold;"> History</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./visit.html" id="menuVisit" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-location-dot" style="color:white"></i><span style="color: white; font-weight: bold;"> Visit Us</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./ringingMasters.html" id="menuRingingMasters" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-bell" style="color:white"></i><span style="color: white; font-weight: bold;"> Ringing Masters</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./training.html" id="menuTraining" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-dumbbell" style="color:white"></i><span style="color: white; font-weight: bold;"> Training Bells</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./contact.html" id="menuContact" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-address-book" style="color:white"></i><span style="color: white; font-weight: bold;"> Contact Us</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./links.html" id="menuLinks" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-link" style="color:white"></i><span style="color: white; font-weight: bold;"> Useful Links</span></a></div>
     </div>
 
     <!--Home Page content-->
@@ -43,7 +43,8 @@
             <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
             <div class="flip-card">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front">
+                  <div class="flip-card-front" id="card1" onmouseover="removeAnim(id);">
+                    <p class="cardTitle">Ringing Master<br /><i class="fa-regular fa-hand-pointer fa-xl fa-beat-fade" style="color: white;"></i></p>
                     <img src="./images/DPtemp.svg" alt="Avatar" style="width: 100%; height:300px;">
                   </div>
                   <div class="flip-card-back">
@@ -55,7 +56,8 @@
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front">
+                  <div class="flip-card-front" id="card2" onmouseover="removeAnim(id);">
+                    <p class="cardTitle">Secretary<br /><i class="fa-regular fa-hand-pointer fa-xl fa-beat-fade" style="color: white;"></i></p>
                     <img src="./images/DPtemp.svg" alt="Avatar" style="width: 100%; height:300px;">
                   </div>
                   <div class="flip-card-back">
@@ -67,7 +69,8 @@
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front">
+                  <div class="flip-card-front" id="card3" onmouseover="removeAnim(id);">
+                    <p class="cardTitle">Treasurer<br /><i class="fa-regular fa-hand-pointer fa-xl fa-beat-fade" style="color: white;"></i></p>
                     <img src="./images/DPtemp.svg" alt="Avatar" style="width: 100%; height:300px;">
                   </div>
                   <div class="flip-card-back">
@@ -79,7 +82,8 @@
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front">
+                  <div class="flip-card-front" id="card4" onmouseover="removeAnim(id);">
+                    <p class="cardTitle">Steeple Keeper<br /><i class="fa-regular fa-hand-pointer fa-xl fa-beat-fade" style="color: white;"></i></p>
                     <img src="./images/DPtemp.svg" alt="Avatar" style="width: 100%; height:300px;">
                   </div>
                   <div class="flip-card-back">
