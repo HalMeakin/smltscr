@@ -333,7 +333,7 @@ tr:nth-child(even) {
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-device-width: 640px) {
 
     #heroImage {
         background-position: -90px;
@@ -345,7 +345,7 @@ tr:nth-child(even) {
     
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-device-width: 560px) {
 
     #menu {
         display: block;
