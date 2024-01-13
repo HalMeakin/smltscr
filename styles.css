@@ -331,10 +331,6 @@ tr:nth-child(even) {
         height: 0em;
     }
 
-    .vert {
-        writing-mode: vertical-lr;
-    }
-
 }
 
 @media screen and (max-width: 640px) {
