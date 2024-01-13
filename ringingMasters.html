@@ -10,27 +10,27 @@
     <!--NavBar-->
     <div id="navBar">
         <div style="display: flex; gap: 10px;">
-            <button id="index" onclick="goToPage(id);"><i class="fa-solid fa-house"></i></button>
+            <button id="index" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);" onclick="goToPage(id);"><i class="fa-solid fa-house"></i></button>
             <span style="margin-right: auto" id="titleFull">St Mary-le-Tower<br/>Society of Change Ringers</span>
         <!--<span style="margin-right: auto" id="titleMin">SMLTSCR</span>-->
-            <button class="menuItem" id="history" onclick="goToPage(id);"><i class="fa-solid fa-history"></i></button>
-            <button class="menuItem" id="visit" onclick="goToPage(id);"><i class="fa-solid fa-location-dot"></i></button>
-            <button class="menuItem" id="ringingMasters" onclick="goToPage(id);" style="background-color: white;"><i class="fa-solid fa-bell" style="color:rgb(22, 156, 246);"></i></button>
-            <button class="menuItem" id="training" onclick="goToPage(id);"><i class="fa-solid fa-dumbbell"></i></button>
-            <button class="menuItem" id="contact" onclick="goToPage(id);"><i class="fa-solid fa-address-book"></i></button>
-            <button class="menuItem" id="links" onclick="goToPage(id);"><i class="fa-solid fa-link"></i></button>
-            <button id="menu" onclick="openDropdownMenu();"><i class="fa-solid fa-bars"></i></button>
+            <button class="menuItem" id="history" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-history"></i></button>
+            <button class="menuItem" id="visit" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-location-dot"></i></button>
+            <button class="menuItem noPointer" id="ringingMasters" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);" style="background-color: white;"><i class="fa-solid fa-bell" style="color:rgb(22, 156, 246);"></i></button>
+            <button class="menuItem" id="training" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-dumbbell"></i></button>
+            <button class="menuItem" id="contact" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);"  onclick="goToPage(id);"><i class="fa-solid fa-address-book"></i></button>
+            <button class="menuItem" id="links" onmouseover="moInteraction(id);" onmouseleave="moInteractionRemove(id);" onclick="goToPage(id);"><i class="fa-solid fa-link"></i></button>
+            <button id="menu" onclick="openDropdownMenu(id);"><i class="fa-solid fa-bars"></i></button>
         </div>
     </div>
 
     <!--Hidden Nav Menu-->
     <div class="dropdownMenu" id="dropdownMenu">
-        <div class="dropdownMenuItem"><a href="./history.html"><i class="fa-solid fa-history" style="color:white"><span style="color: white;"> History</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./visit.html"><i class="fa-solid fa-location-dot" style="color:white"><span style="color: white;"> Visit Us</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./ringingMasters.html"><i class="fa-solid fa-bell" style="color:white"><span style="color: white;"> Ringing Masters</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./training.html"><i class="fa-solid fa-dumbbell" style="color:white"><span style="color: white;"> Training Bells</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./contact.html"><i class="fa-solid fa-address-book" style="color:white"><span style="color: white;"> Contact Us</span></i></a></div>
-        <div class="dropdownMenuItem"><a href="./links.html"><i class="fa-solid fa-link" style="color:white"><span style="color: white;"> Useful Links</span></i></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./history.html" id="menuHistory" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-history" style="color:white"></i><span style="color: white; font-weight: bold;"> History</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./visit.html" id="menuVisit" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-location-dot" style="color:white"></i><span style="color: white; font-weight: bold;"> Visit Us</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./ringingMasters.html" id="menuRingingMasters" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-bell" style="color:white"></i><span style="color: white; font-weight: bold;"> Ringing Masters</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./training.html" id="menuTraining" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-dumbbell" style="color:white"></i><span style="color: white; font-weight: bold;"> Training Bells</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./contact.html" id="menuContact" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-address-book" style="color:white"></i><span style="color: white; font-weight: bold;"> Contact Us</span></a></div>
+        <div class="dropdownMenuItem"><a style="text-decoration: none;" href="./links.html" id="menuLinks" onmouseover="moInteraction(id)" onmouseleave="moInteractionRemove(id)"><i class="fa-solid fa-link" style="color:white"></i><span style="color: white; font-weight: bold;"> Useful Links</span></a></div>
     </div>
 
     <!--Ringing Masters Page content-->
@@ -44,8 +44,8 @@
             <div class="timeline" style="display: flex; flex-direction: column; width: 70%; align-items: center;">
                 <h3>Present Day</h3>
                 <div class="rmCareerCard" style="padding: 20px;">
-                    <div style="background-color: rgb(9, 78, 124); width: 400px; height: 180px; border-radius: 15px; display: grid; grid-template-columns: 2; grid-template-rows: 2;">
-                        <div style="background-image: url(./images/DPtemp.svg); min-width: 150px; max-width: 400px; border-radius: 15px 0px 0px 15px; background-size: cover; grid-column: 1; grid-row: 1/3; pointer-events: none;">
+                    <div class="cardStructure">
+                        <div class="cardImg cardL">
                         </div>
                         <h1 style="padding-left: 10px; color: white; grid-area: 1 / 2;">Colin Salter</h1>
                         <p style="padding-left: 10px; color: white; grid-area: 2 / 2;">2023 to present.</p>
@@ -53,8 +53,8 @@
                 </div>
 
                 <div class="rmCareerCard" style="padding: 20px;">
-                    <div style="background-color: rgb(9, 78, 124); width: 400px; height: 180px; border-radius: 15px; display: grid; grid-template-columns: 2; grid-template-rows: 2;">
-                        <div style="background-image: url(./images/DPtemp.svg); min-width: 150px; max-width: 400px; border-radius: 0px 15px 15px 0px; background-size: cover; grid-column: 2; grid-row: 1/3; pointer-events: none;">
+                    <div class="cardStructure">
+                        <div class="cardImg cardR">
                         </div>
                         <h1 style="justify-self: end; padding-right: 10px; color: white; grid-area: 1 / 1;">David Potts</h1>
                         <p style="justify-self: end; padding-right: 10px; color: white; grid-area: 2 / 1;">2009 to 2023.</p>
@@ -62,8 +62,8 @@
                 </div>
 
                 <div class="rmCareerCard" style="padding: 20px;">
-                    <div style="background-color: rgb(9, 78, 124); width: 400px; height: 180px; border-radius: 15px; display: grid; grid-template-columns: 2; grid-template-rows: 2;">
-                        <div style="background-image: url(./images/DPtemp.svg); min-width: 150px; max-width: 400px; border-radius: 15px 0px 0px 15px; background-size: cover; grid-column: 1; grid-row: 1/3; pointer-events: none;">
+                    <div class="cardStructure">
+                        <div class="cardImg cardL">
                         </div>
                         <h1 style="padding-left: 10px; color: white; grid-area: 1 / 2;">Richard <br/>Munnings</h1>
                         <p style="padding-left: 10px; color: white; grid-area: 2 / 2;">2007 to 2009.</p>
@@ -71,8 +71,8 @@
                 </div>
 
                 <div class="rmCareerCard" style="padding: 20px;">
-                    <div style="background-color: rgb(9, 78, 124); width: 400px; height: 180px; border-radius: 15px; display: grid; grid-template-columns: 2; grid-template-rows: 2;">
-                        <div style="background-image: url(./images/DPtemp.svg); min-width: 150px; max-width: 400px; border-radius: 0px 15px 15px 0px; background-size: cover; grid-column: 2; grid-row: 1/3; pointer-events: none;">
+                    <div class="cardStructure">
+                        <div class="cardImg cardR">
                         </div>
                         <h1 style="padding-left: 10px; color: white; grid-area: 1 / 1;">Owen Claxon</h1>
                         <p style="padding-left: 10px; color: white; grid-area: 2 / 1;">1991 to 2007.</p>
@@ -80,8 +80,8 @@
                 </div>
 
                 <div class="rmCareerCard" style="padding: 20px;">
-                    <div style="background-color: rgb(9, 78, 124); width: 400px; height: 180px; border-radius: 15px; display: grid; grid-template-columns: 2; grid-template-rows: 2;">
-                        <div style="background-image: url(./images/DPtemp.svg); min-width: 150px; max-width: 400px; border-radius: 15px 0px 0px 15px; background-size: cover; grid-column: 1; grid-row: 1/3; pointer-events: none;">
+                    <div class="cardStructure">
+                        <div class="cardImg cardL">
                         </div>
                         <h1 style="padding-left: 10px; color: white; grid-area: 1 / 2;">Simon Rudd</h1>
                         <p style="padding-left: 10px; color: white; grid-area: 2 / 2;">1989 to 1991.</p>
@@ -89,8 +89,8 @@
                 </div>
 
                 <div class="rmCareerCard" style="padding: 20px;">
-                    <div style="background-color: rgb(9, 78, 124); width: 400px; height: 180px; border-radius: 15px; display: grid; grid-template-columns: 2; grid-template-rows: 2;">
-                        <div style="background-image: url(./images/DPtemp.svg); min-width: 150px; max-width: 400px; border-radius: 0px 15px 15px 0px; background-size: cover; grid-column: 2; grid-row: 1/3; pointer-events: none;">
+                    <div class="cardStructure">
+                        <div class="cardImg cardR">
                         </div>
                         <h1 style="padding-left: 10px; color: white; grid-area: 1 / 1;">George Pipe</h1>
                         <p style="padding-left: 10px; color: white; grid-area: 2 / 1;">1963 to 1989.</p>
