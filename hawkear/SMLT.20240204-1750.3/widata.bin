@@ -1,0 +1,169 @@
+# Created by Octave 4.4.1, Sun Feb 04 17:51:03 2024 GMT <unknown@LAPTOP-4UL5BSB8>
+# name: TouchDetails
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 17
+# name: piSourcefilename
+# type: sq_string
+# elements: 1
+# length: 76
+C:\Users\Hawkear\Ringing Files\Recordings\SMLT\SMLT.20240204-1750.s0t0.3.wav
+
+
+# name: piRingingdatetime
+# type: sq_string
+# elements: 1
+# length: 13
+20240204-1750
+
+
+# name: piTower
+# type: sq_string
+# elements: 1
+# length: 13
+SMLT, Ipswich
+
+
+# name: piRingingname
+# type: sq_string
+# elements: 1
+# length: 7
+Touch 3
+
+
+# name: piStdev
+# type: scalar
+41.802784103245592
+
+
+# name: piStdevpercentStr
+# type: sq_string
+# elements: 1
+# length: 4
+20.1
+
+
+# name: piStdevPct
+# type: scalar
+20.104362965960572
+
+
+# name: piTouchlength
+# type: scalar
+264
+
+
+# name: piPiecelength
+# type: scalar
+278
+
+
+# name: piTouchDuration
+# type: sq_string
+# elements: 1
+# length: 15
+11 mins 27 secs
+
+
+# name: piPieceDuration
+# type: sq_string
+# elements: 1
+# length: 14
+12 mins 5 secs
+
+
+# name: piMethod
+# type: sq_string
+# elements: 1
+# length: 17
+Grandsire Cinques
+
+
+# name: piPealSpeed
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: string
+# type: sq_string
+# elements: 1
+# length: 13
+3 hrs 39 mins
+
+
+# name: numeric
+# type: scalar
+13121860.340201253
+
+
+
+
+# name: piNBells
+# type: scalar
+12
+
+
+# name: piRowsBadInPiece
+# type: scalar
+18
+
+
+# name: piTouchFaults
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 2
+# name: count
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: hand
+# type: scalar
+305
+
+
+# name: back
+# type: scalar
+297
+
+
+# name: all
+# type: scalar
+602
+
+
+
+
+# name: mean
+# type: scalar struct
+# ndims: 2
+ 1 1
+# length: 3
+# name: hand
+# type: scalar
+32.049398021522549
+
+
+# name: back
+# type: scalar
+32.030954034231414
+
+
+# name: all
+# type: scalar
+31.699533248321291
+
+
+
+
+
+
+# name: piExpstring
+# type: sq_string
+# elements: 0
+
+
+
+
