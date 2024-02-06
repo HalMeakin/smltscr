@@ -56,6 +56,8 @@ hr {
 
 #titleFull {
     display: block;
+    align-self: center;
+    font-size: small;
 }
 
 .dropdownMenu {
@@ -96,8 +98,13 @@ button {
     background-color: rgb(22, 156, 246);
     color: white;
     width: 35px;
-    height: 37px;
+    height: 50px;
     transition: all .2s ease-in-out;
+}
+
+.menuItem {
+    width: 100px;
+    height: 50px;
 }
 
 .usefulLinks {
@@ -333,6 +340,23 @@ tr:nth-child(even) {
 
 }
 
+@media screen and (max-width: 800px) {
+    
+    #menu {
+        display: block;
+    }
+
+    .menuItem {
+        display: none;
+    }
+
+    button {
+        width: 50px;
+        height: 40px;
+    }
+
+}
+
 @media screen and (max-width: 640px) {
 
     #heroImage {
@@ -343,13 +367,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 560px) {
 
-    #menu {
-        display: block;
-    }
-
-    .menuItem {
-        display: none;
-    }
+    
 
     #heroImage {
         background-position: -150px, 0px;
